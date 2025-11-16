@@ -34,14 +34,14 @@ struct MomentEntryView: View {
     var contentStack: some View {
         VStack(alignment: .leading) {
             TextField(text: $title){
-                Text("Title Required")
+                Text("Enter your title")
             }
             .padding(.top, 40)
             .font(.title.bold())
             
             Divider()
             
-            TextField("Write note", text: $note, axis: .vertical) 
+            TextField("Write your note", text: $note, axis: .vertical) 
                 .multilineTextAlignment(.leading)
                 .lineLimit(5...Int.max)
             
